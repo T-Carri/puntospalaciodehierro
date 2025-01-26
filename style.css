@@ -11,7 +11,7 @@ body {
     height: 100vh;
    /*  background-color: #f0f0f0; */
   
-   background-image: url('imgGame/fondo04.png'); /* Asegúrate de que la ruta a la imagen sea correcta */
+   background-image: url('imgGame/fondo04.webp'); /* Asegúrate de que la ruta a la imagen sea correcta */
    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
    background-position: center; /* Centra la imagen de fondo */
    background-repeat: no-repeat;

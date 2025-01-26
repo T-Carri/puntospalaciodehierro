@@ -401,8 +401,8 @@ let playerSpeed = 10;
 let playerX;
 let playerY;
 
-let fallingObjectWidth = 60;
-let fallingObjectHeight = 60;
+let fallingObjectWidth = 65;
+let fallingObjectHeight = 65;
 let fallingObjects = [];
 let objectSpeed = 2;
 let score = 0;
