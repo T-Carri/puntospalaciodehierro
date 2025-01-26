@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: transparent; /* Eliminado fondo negro */
+    height: 100%;
+    width: 100%;
+}
+
+.ground01, .ground02, .ground05 {
+    background-color: gray;
+    height: 100%;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1280px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ground01 {
+    background-image: url("../img/fondo01.png");
+}
+
+.ground02 {
+    background-image: url("../img/fondo02.png");
+}
+
+.ground05 {
+    background-image: url("../img/fondo05.png");
+}
+
+.panatalla01, .panatalla02, .panatalla03, .panatalla04, .panatalla05, .panatalla06, .panatalla07, .panatalla08 {
+    display: block;
+}
+
+.panatalla01 {
+    display: block;
+}
+
+.barraTop {
+    background-color: #FFCD00;
+    height: 39px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.barraIzq {
+    float: left;
+    width: 50%;
+}
+
+.barraIzq img {
+    float: right;
+    margin: 12px 25px 0 0;
+}
+
+.barraDer {
+    float: right;
+    width: 50%;
+}
+
+.barraDer img {
+    float: left;
+    margin: 12px 0 0 25px;
+}
+
+.txt01a {
+    margin: 170px auto 0;
+    width: fit-content;
+}
+
+.txt01b {
+    margin: 15px auto 0;
+    width: fit-content;
+}
+
+.txt02a {
+    margin: 60px auto 0;
+    width: fit-content;
+}
+
+.txt05b {
+    margin: 45px auto 0;
+    width: fit-content;
+}
+
+.btn01a {
+    margin: 20px auto 0;
+    width: fit-content;
+}
+
+.bolsa01 {
+    margin: 35px auto 0;
+    width: fit-content;
+}
+
+.cuadro02a {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 30px auto;
+    width: 590px;
+}
+
+.por50 {
+    float: left;
+    width: 50%;
+}
+
+.por96 {
+    display: flex;
+    margin: 5px auto;
+    width: 96%;
+}
+
+.margin20bot {
+    margin-bottom: 20px;
+}
+
+.input2 {
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.select2 {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 30px;
+    letter-spacing: 3px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-align-last: center;
+    width: 200px;
+}
+
+.select2 option {
+    background-color: white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.txt01b label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    transform: scale(1.4); /* Adaptación para escalado uniforme */
+    padding: 10px;
+}
+
+/* Media Queries para Responsividad en teléfonos y tabletas */
+
+@media (max-width: 1280px) {
+    .ground01 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .barraIzq, .barraDer {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .barraIzq img, .barraDer img {
+        margin: 12px auto;
+    }
+    .txt01a, .txt01b, .btn01a, .bolsa01 {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .barraIzq, .barraDer {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .barraIzq img, .barraDer img {
+        margin: 12px auto;
+    }
+    .txt01a, .txt01b, .btn01a, .bolsa01 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Ajustar las imágenes para mantener la proporción */
+    .txt01a img, .txt01b img, .btn01a img, .bolsa01 img {
+        width: 100%;
+        height: auto; /* Evita distorsión manteniendo la proporción */
+    }
+}
+
+@media (max-width: 480px) {
+    .txt01a, .txt01b, .btn01a, .bolsa01 {
+        width: 80%;
+        margin: 5px auto;
+    }
+    /* Ajustar las imágenes para mantener la proporción */
+    .txt01a img, .txt01b img, .btn01a img, .bolsa01 img {
+        width: 100%;
+        height: auto; /* Evita distorsión manteniendo la proporción */
+    }
+}

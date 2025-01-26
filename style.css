@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   /*  background-color: #f0f0f0; */
+  
+   background-image: url('imgGame/fondo04.png'); /* Asegúrate de que la ruta a la imagen sea correcta */
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   background-position: center; /* Centra la imagen de fondo */
+   background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+ /*    background-color: #dcdcdc; */
+    /* border: 2px solid #000; */
+}
+
+.timer{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #FFCD00;
+font-weight: 700;
+font-size: 2vw;
+}
+
+.puntuaje{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFCD00;
+    font-weight: 700;
+    font-size: 2vw;
+}
